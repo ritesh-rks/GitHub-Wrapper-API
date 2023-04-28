@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: #252422;
+}
+
+h1{
+    text-align: center;
+}
+
+/* input section */
+
+.inputSection{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#userName{
+    width: auto;
+    padding: 3px 7px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+}
+
+#showDetails{
+    padding: 3px 7px;
+    border-radius: 5px;
+    background-color: #7cb518;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#showDetails:hover{
+    background-color: #548c2f;
+}
+
+/* profile */
+
+#profileInfo {
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+}
+
+#profileInfo .card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 1rem;
+    width: 60%;
+}
+
+#profileInfo .card:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.card-img, img{
+  border-radius: 50%;
+  width: 200px;
+  margin: 5px auto;
+}
+
+.card button{
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #7cb518;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.card button:hover{
+    background-color: #548c2f;
+}
+
+/* reposInfo */
+
+.mainRepo{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.sort-container{
+    text-align: center;
+}
+
+#sortOption, option{
+    color: #000;
+}
+
+#reposInfo{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+#reposInfo .card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 1rem;
+    width: 370px;
+    text-align: center;
+}
+
+#reposInfo .card:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+#reposInfo .card-title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#reposInfo .card-subHeading{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fa-code-fork{
+    margin-right: 3px;
+    color: grey;
+}
+
+.card-description{
+    font-size: 12px;
+    max-height: 50px;
+    overflow-y: scroll;
+}
+
+
+.card-description::-webkit-scrollbar {
+    display: none; /* hide the scrollbar by default */
+    width: 8px;
+    height: 8px;
+  }
+  
+  .card-description:hover::-webkit-scrollbar {
+    display: block; /* display the scrollbar on hover */
+  }
+
+  /* background of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+  }
+  
+  /* color of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+
+  /* media queries */
+
+  @media (max-width: 575px)
+  {
+    #profileInfo .card{
+        width: auto;
+        margin: 10px;
+    }
+  }
